@@ -1,5 +1,8 @@
 /***** Estilos generales *****/
 
+
+/*#226A88 #60ABB2 #A9B578 #AC9C93*/
+
 body {
     /*font-family: 'Krona One', sans-serif;*/
     font-family: 'Raleway', sans-serif;
@@ -14,8 +17,8 @@ i {
 }
 
 #wrapper {
-    padding-bottom: 45px;
-    min-height: calc(100% - 45px);
+    padding-bottom: 60px;
+    min-height: calc(100% - 60px);
     position: relative;
 }
 
@@ -23,9 +26,6 @@ main {
     width: 80%;
     margin: 0 10%;
 }
-
-
-/*#226A88 #60ABB2 #A9B578 #AC9C93*/
 
 
 /***** Navbar *****/
@@ -116,14 +116,13 @@ p.title {
     }
     main {
         width: 100%;
-        padding: 0 5%;
         margin: 0;
     }
     .container {
         flex-direction: column;
         height: auto;
         text-align: center;
-        padding: 125px 0em 0em 0em;
+        padding: 125px 15px 0 15px;
     }
     .container-info {
         text-align: center;
@@ -181,21 +180,32 @@ p.title {
 .container-contacto {
     background-color: #226A88;
     width: 100%;
-    height: 250px;
+    height: auto;
     color: white;
     display: flex;
     justify-content: space-around;
 }
 
 .contacto {
+    width: 25%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+.text {
+    width: 40%;
+    text-align: justify;
+}
+
+.skills {
+    text-align: center;
+    width: 25%;
+}
+
 .contacto a i,
 .skills i {
-    margin: 5px;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -204,6 +214,14 @@ p.title {
         padding: 0 0 30px 0;
         height: auto;
         flex-direction: column;
+    }
+    .text,
+    .contacto,
+    .skills {
+        width: 100%;
+    }
+    .text p {
+        padding: 0 20px;
     }
 }
 
@@ -214,19 +232,14 @@ footer {
     color: white;
     text-align: center;
     background-color: #226A88;
+    border-top: 1px solid #A9B578;
     width: 100%;
-    height: 45px;
+    height: 60px;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
 footer span {
-    color: #AC9C93;
-}
-
-@media (max-width: 768px) {
-    footer {
-        border-top: 1px solid #AC9C93;
-    }
+    color: #A9B578;
 }
